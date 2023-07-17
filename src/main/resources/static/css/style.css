@@ -1,0 +1,305 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}	
+
+.header
+{
+    height: 100%;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+}
+
+.background
+{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+h1, h2
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.titles
+{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: silver;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container
+{
+    position: relative;
+    max-width: 379px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+    z-index: 10;
+}
+
+.intro
+{
+    padding-top: 20%;
+}
+
+.imgPersonal
+{
+    border-radius: 25px;
+}
+
+.navbar-color, .navbar-nav
+{
+    background-color: black;
+}
+
+.navbar-brand
+{
+    padding-left: 10px;
+}
+
+ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+li
+{
+    list-style: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+
+li:hover
+{
+    border: 3px solid white;
+    border-style: solid none none none;
+}
+
+#tag-espanol, #tag-english
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#separador
+{
+    border-left: 1px solid white;
+    height: 40px;
+}
+
+#CV-modal
+{
+    width: 800px;
+    height: 1200px;
+}
+
+.about
+{
+    height: 100%;
+}
+
+.left-info
+{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    min-height: 490px;
+    background-color: red;
+}
+
+.right-info
+{
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  min-height: 490px;
+  background-color: grey;
+}
+
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.my-work
+{
+    height: 100%;
+}
+
+.contact
+{
+    height: 75%;
+    padding-top: 55px;
+    /*padding-left: 30px;
+    padding-right: 30px;*/
+    background-color: dimgrey;
+}
+
+.footer
+{
+    height: 25%;
+    background-color: black;
+    padding: 30pt;
+}
+
+.sidebar, .overlay
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.sidebar
+{
+    left: -100%;
+    max-width: 300px;
+    transition: all ease 0.25s;
+}
+
+.overlay
+{
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    visibility: hidden;
+}
+
+.main-navigation.active .sidebar
+{
+    left: 0;
+}
+
+.main-navigation.active .overlay
+{
+    visibility: visible;
+}
+
+@media (min-width: 992px)
+{
+    .sidebar
+    {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        flex-direction: row;
+        max-width: 100%;
+        transition: none;
+        overflow-y: visible;
+    }
+
+}
+
+.form-container
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-color: black;
+}
+
+.col-form-label, .form-label
+{
+    color: white;
+}
+
+.form-control:focus
+{
+    outline: none !important;
+    border: 1px solid black !important;
+    box-shadow: 0 0 10px black !important;
+}
+
+.btn-submit
+{
+    text-align: center;
+    text-transform: uppercase;
+    background: none;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    font-size: 1rem;
+    padding: .375rem .75rem;
+    display: inline-block;
+    transition-duration: 0.2s;
+}
+
+.btn-submit:hover
+{
+    background-color: black;
+    color: white;
+}
+
+#copyright
+{
+    color:white;
+    font-size: 10px;
+}
+
+#sociallinks
+{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+#sociallinks:hover
+{
+    filter: brightness(2);
+}
+
+#socialmedia
+{
+    filter: opacity(0.9) drop-shadow(0 0 0 black);
+    width: 30px;
+    height: 30px;
+    object-fit: none;
+    overflow: auto;
+    background-color: white;
+    margin: 10pt;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: white;
+  }
